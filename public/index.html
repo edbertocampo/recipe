@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Savr – TikTok Recipes</title>
+  <meta name="description" content="Share a TikTok cooking video, get the full recipe with servings, grams and timers." />
+  <meta name="theme-color" content="#e8553d" />
+  <link rel="manifest" href="/manifest.webmanifest" />
+  <link rel="icon" href="/icons/icon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/icons/icon-192.png" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="Savr" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <button class="icon-btn" id="backBtn" aria-label="Back" hidden>
+      <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M15 18l-6-6 6-6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <a href="#/" class="brand"><img src="/icons/icon.svg" alt="" width="28" height="28" /> Savr</a>
+    <span class="spacer"></span>
+    <button class="icon-btn" id="installBtn" hidden>Install</button>
+  </header>
+
+  <main id="app"></main>
+
+  <div id="timerTray" class="timer-tray" aria-live="polite"></div>
+  <div id="toast" class="toast" role="status" hidden></div>
+
+  <script type="module" src="/app.js"></script>
+</body>
+</html>

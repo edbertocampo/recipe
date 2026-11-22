@@ -1,0 +1,24 @@
+{
+  "name": "Savr – TikTok Recipes",
+  "short_name": "Savr",
+  "description": "Share a TikTok cooking video, get the full recipe with servings, grams and timers.",
+  "id": "/",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#fff8f2",
+  "theme_color": "#e8553d",
+  "categories": ["food", "lifestyle"],
+  "icons": [
+    { "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "/icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" },
+    { "src": "/icons/icon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ],
+  "share_target": {
+    "action": "/",
+    "method": "GET",
+    "params": { "title": "title", "text": "text", "url": "url" }
+  }
+}
